@@ -10,6 +10,7 @@ import dad from '../../videos/dad.mp4'
 import auntuncle from '../../videos/aunt-uncle.mp4'
 import kimmie from '../../videos/kimmie.mp4'
 import jane from '../../videos/jane.mp4'
+import sammy from '../../videos/sammy.mp4'
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -31,7 +32,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="" />
+          <Title title="Birthday messages" />
           <Row>
           <Col lg={12} sm={12} style={{padding:"20px"}}>
                 <Fade
@@ -41,7 +42,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                  <video width="70%" controls>
+                  <video width="90%" controls>
                     <source src={mom} type="video/mp4" />
                   </video>
                 </Fade>
@@ -54,7 +55,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                  <video width="70%" controls>
+                  <video width="90%" controls>
                     <source src={dad} type="video/mp4" />
                   </video>
                 </Fade>
@@ -67,7 +68,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                  <video width="70%" controls>
+                  <video width="90%" controls>
                     <source src={kimmie} type="video/mp4" />
                   </video>
                 </Fade>
@@ -80,7 +81,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                  <video width="70%" controls>
+                  <video width="90%" controls>
                     <source src={auntuncle} type="video/mp4" />
                   </video>
                 </Fade>
@@ -93,8 +94,21 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                  <video width="70%" controls>
+                  <video width="90%" controls>
                     <source src={jane} type="video/mp4" />
+                  </video>
+                </Fade>
+            </Col>
+            <Col lg={12} sm={12} style={{padding:"20px"}}>
+                <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                  <video width="90%" controls>
+                    <source src={sammy} type="video/mp4" />
                   </video>
                 </Fade>
             </Col>

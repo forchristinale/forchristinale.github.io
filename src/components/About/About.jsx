@@ -45,7 +45,12 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {
-                    "I hope your birthday is filled with love, cheer, fun, smiles and lovely memories!"}
+                    "I hope your birthday is filled with love, cheer, fun, smiles and lovely memories! Even though we're in a pandemic, \
+                    that won't stop the fun"}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {
+                    ""}
                 </p>
                 <p className="about-wrapper__info-text">
                   {"Isn't it so nerdy your boyfriend coded out this website for you? heheheheh"}
