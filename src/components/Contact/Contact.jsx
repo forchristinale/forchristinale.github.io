@@ -11,22 +11,20 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <Title title="woo" />
+        <Title title="heh happy birthday" />
         <Fade bottom duration={1000} delay={800} distance="30px">
-          <h1>ok!</h1>
-          {/* <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              {cta || 'Would you like to work with me? Awesome!'}
+              {"I hope the surprise was lovely and I hope loved the birthday messages heh"}
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn cta-btn--resume"
-              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
-            >
-              {btn || "Let's Talk"}
-            </a>
-          </div> */}
+            <p className="contact-wrapper__text">
+              {"I hope today is incredible, and I love you :)"}
+            </p>
+            <p className="contact-wrapper__text">
+              {"Happy birthday to you, the best thing that has ever happened to me"}
+            </p>
+            <p className="contact-wrapper__text">
+              {"Love, Geo Min"}
+            </p>
         </Fade>
       </Container>
     </section>
