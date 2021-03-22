@@ -11,6 +11,7 @@ import auntuncle from '../../videos/aunt-uncle.mp4'
 import kimmie from '../../videos/kimmie.mp4'
 import jane from '../../videos/jane.mp4'
 import sammy from '../../videos/sammy.mp4'
+import vicki from '../../videos/vicki.mp4'
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -109,6 +110,19 @@ const Projects = () => {
                   >
                   <video width="90%" controls>
                     <source src={sammy} type="video/mp4" />
+                  </video>
+                </Fade>
+            </Col>
+            <Col lg={12} sm={12} style={{padding:"20px"}}>
+                <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                  <video width="90%" controls>
+                    <source src={vicki} type="video/mp4" />
                   </video>
                 </Fade>
             </Col>
