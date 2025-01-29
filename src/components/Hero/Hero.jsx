@@ -24,12 +24,22 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
+        <h2 className="hero-subtitle">
+          {subtitle || "Recipes"}
+        </h2>
+        <ul>
+          <li><p className="text-left"><a href="/biryani">Chicken biryani</a></p></li>
+        </ul>
+        <br/>
+        <br/>
+        <br/>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            { "To "}
+            {"To "}
             <span className="text-color-main">{"Christina Le"}</span>
             <br />
           </h1>
+
           <h2 className="hero-subtitle">
             {subtitle || "the birthday girl, a cutie and a ray of sunshine"}
           </h2>
