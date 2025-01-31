@@ -43,7 +43,7 @@ export default () => {
                         <li><p>1 tablespoon of red/normal chili powder</p></li>
                         <li><p>1 teaspoon of tumeric powder</p></li>
                         <li><p>1 teaspoon of garam masala powder</p></li>
-                        <li><p>1 1/4 teaspoon of garam masala powder</p></li>
+                        <li><p>1 1/4 teaspoon of salt</p></li>
                     </ul>
                     <br />
                     <p>70% cooked (parboiled rice)</p>
@@ -72,6 +72,7 @@ export default () => {
                         <li><p>Once all marinated, heat a large pot (ideally heavy bottomed pot) to medium/high heat, then throw in the chicken</p></li>
                         <li><p>Cook the chicken for 4 minutes, then flip the chicken over and cook for 3 minutes on the other side</p></li>
                         <li><p>While the chicken is cooking, bring 6 cups of water to a boil, then throw in the rice and whole spices. Let it cook for 5 minutes. The rice will cook to about 70%, should still be raw in the middle when you press on the rice with your finger</p></li>
+                        <li><p>Drain the rice (keep the whole spices!)</p></li>
                         <li><p>Once the chicken is at the 7 minute mark of cooking (4 min + 3 min), throw the rice on top of the chicken (and optionally: throw some crispy onions, cilantro, mint leaves, butter on top)</p></li>
                         <li><p>Cook and <b>cover</b> it on low heat for 20 minutes, so the pot can steam and let the chicken get tender and rice become fully cooked</p></li>
                         <li><p>(Optional: throw some brown onions on top) </p></li>
