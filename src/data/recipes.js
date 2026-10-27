@@ -19,6 +19,18 @@ export const recipes = [
     emoji: '🌿',
     tags: ['beef', 'argentinian', 'sauce'],
   },
+  {
+    slug: 'udon-salad',
+    title: 'Udon salad (우동 샐러드)',
+    emoji: '🥗',
+    tags: ['korean', 'noodles', 'salad'],
+  },
+  {
+    slug: 'chinese-eggplant',
+    title: 'Chinese eggplant',
+    emoji: '🍆',
+    tags: ['chinese', 'vegetable', 'stir-fry'],
+  },
 ];
 
 export const getRecipe = (slug) => recipes.find((r) => r.slug === slug);
