@@ -25,13 +25,8 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <h2 className="hero-subtitle">
-          {subtitle || "Recipes"}
+          <a href="/recipes">Recipes</a>
         </h2>
-        <ul>
-          <li><p className="text-left"><a href="/biryani">Chicken biryani</a></p></li>
-          <li><p className="text-left"><a href="/chives">Chives (with steak)</a></p></li>
-          <li><p className="text-left"><a href="/chimichurri">Chimichurri</a></p></li>
-        </ul>
         <br/>
         <br/>
         <br/>

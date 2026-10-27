@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { headData } from '../mock/data';
+import RecipeTags from '../components/RecipeTags/RecipeTags';
 import '../style/main.scss';
 
 export default () => {
@@ -22,7 +23,7 @@ export default () => {
             <br />
             <br />
             <br />
-            <p><a href="/">Home</a></p>
+            <p><a href="/">Home</a> · <a href="/recipes">All recipes</a></p>
             <br />
             <Container>
                 <h1 className="hero-title text-center">
@@ -31,6 +32,7 @@ export default () => {
                         🌿
                     </span>
                 </h1>
+                <RecipeTags slug="chives" />
                 <div className="text-left">
                     <h2><u>Ingredients</u></h2>
                     <ul>
