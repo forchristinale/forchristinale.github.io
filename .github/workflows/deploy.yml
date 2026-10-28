@@ -1,0 +1,39 @@
+name: Deploy
+
+# Builds the site and publishes it to the gh-pages branch (which GitHub Pages serves)
+# every time main is pushed. Can also be run by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Only one deploy at a time; a newer push cancels one still in progress.
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: write # lets the job push to the gh-pages branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Runs the same script as locally (gatsby build, copy CNAME, publish with gh-pages).
+      # The extra args after `--` are appended to the final `gh-pages` command so it can
+      # authenticate with the workflow token and commit as the Actions bot.
+      - name: Deploy
+        run: >
+          npm run deploy --
+          -r "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          -u "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
